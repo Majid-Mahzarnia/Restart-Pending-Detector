@@ -3,8 +3,9 @@
 
 <br /> You can run the Restart_Pending_Detector.exe (by Administrator privilege) then find the Restart_Pending_Detector.log from current path to find out whether or not your Windows OS needs restart.
 
+<br /> You can run the Restart_Pending_Reporter.exe (by Administrator privilege) tp send the generated logs to the database (all credentials will be encrypted and stored in current path -  credentials are store just one time and you do mot have to set them every time you run the Restart_Pending_Reporter.exe or at task scheduled)
 
-<br /> to send the report log to the database follow these steps:
+<br /> To send the report log to the database follow these steps:
 
 # DATABASE Management:
 
@@ -51,6 +52,6 @@ SELECT [unique_guid]
       ,[last_reported]
   FROM [RestartPendingDetector].[dbo].[RestartPendingDetector]
 
-# Schedule Task
+# Scheduled Task
 
 - now you can make an schedule task to re-run the Restart_Pending_Reporter.exe and send the report to the database time to time.
