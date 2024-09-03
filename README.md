@@ -55,3 +55,9 @@ SELECT [unique_guid]
 # Scheduled Task
 
 - now you can make an schedule task to re-run the Restart_Pending_Reporter.exe and send the report to the database time to time.
+
+# Grafana Dashboard added
+
+- you can setup the data source in grafana then import the RestartRequiredPending_Dashboard.json
+
+
