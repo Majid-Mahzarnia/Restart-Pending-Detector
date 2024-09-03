@@ -1,9 +1,9 @@
 # Restart Pending Detector
 <br /> Restart pending Detector and Reporter for Microsoft Windows server and workstation
 
-<br /> You can run the Restart_Pending_Detector.exe (by Administrator privilege) then find the Restart_Pending_Detector.log from current path to find out whether or not your Windows OS needs restart.
+<br /> You can run the **Restart_Pending_Detector.exe** (by Administrator privilege) then find the Restart_Pending_Detector.log from current path to find out whether or not your Windows OS needs restart.
 
-<br /> You can run the Restart_Pending_Reporter.exe (by Administrator privilege) to send the generated logs to the database (all credentials will be encrypted and stored in current path -  credentials are store just one time and you do not have to set them every time you run the Restart_Pending_Reporter.exe or at task scheduled)
+<br /> You can run the **Restart_Pending_Reporter.exe** (by Administrator privilege) to send the generated logs to the database (all credentials will be encrypted and stored in current path -  credentials are store just one time and you do not have to set them every time you run the Restart_Pending_Reporter.exe or at task scheduled)
 
 <br /> To send the report log to the database follow these steps:
 
