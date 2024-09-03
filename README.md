@@ -26,7 +26,7 @@
 - set the mentioned sql "username sample = "restartdetector"" as the DB owner of RestartPendingDetector database
 
 - run the following query on the RestartPendingDetector Database
-
+```
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'RestartPendingDetector' AND xtype = 'U')
 BEGIN
     CREATE TABLE RestartPendingDetector (
@@ -43,7 +43,7 @@ ELSE
 BEGIN
     PRINT 'Table RestartPendingDetector already exists.';
 END
-
+```
 - login with the user (sample = "restartdetector") to make sure of DB connection is ok
 
 - <br /> now Run **Restart_Pending_Reporter.exe** in a cli (cmd, owershell ...) and use the mssql credential then check the database table
@@ -53,7 +53,7 @@ END
 - To use **Restart Pending Detector** with the same credential on other sytems, you can copy **private_key.pem**, **public_key.pem** and **secret.json** in the same folder on other systems
 
 - you can find logs on mssql by the following query - run in on **RestartPendingDetector** database 
-
+```
 /****** Script for SelectRows command from SSMS  ******/
 SELECT [unique_guid]
       ,[system_name]
@@ -62,7 +62,7 @@ SELECT [unique_guid]
       ,[last_checked]
       ,[last_reported]
   FROM [RestartPendingDetector].[dbo].[RestartPendingDetector]
-
+```
 # Scheduled Task
 
 - now you can create a schedule task to re-run the Restart_Pending_Reporter.exe and send the report to the database time to time.
